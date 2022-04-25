@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdown nav</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<style>
+	ul.nav-pills{
+		top: 20px;
+		position: fixed;
+	}
+	div.col-8 div{
+		height: :500px;
+	}
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+	<div class="container-fluid">
+    <div class="row">
+    	<nav class="col-sm-3 col-4" id="myScrollspy">
+    		<ul class="nav nav-pills flex-column">
+    			<li class="nav-item">
+    				<a class="nav-link active" href="#s1">Home</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="#s2">Education</a>
+    			</li>
+
+    			<li class="nav-item">
+    				<a class="nav-link " href="#s3">Games</a>
+    			</li>
+    			<li class="nav-item dropdown">
+    				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Classes</a>
+    				<div class="dropdown-menu">
+    					<a class="dropdown-menu" href="#s4">Offline</a>
+    					<a class="dropdown-menu" href="#s5">Online</a>
+    				</div>
+    			</li>
+    		</ul>
+
+    	</nav>
+    	<div class="col-sm-9 col-8">
+    		<div id="s1" class="bg-sucess">
+    			<h1>Home</h1>
+    			<p> The  HTML element represents a description list. The element encloses a list of groups of terms (specified using the dt element) and descriptions (provided by dd elements). </p></div>
+    		<div id="s2" class="bg-info">
+    				<h1>Education</h1>
+    				<p>The  HTML element represents a description list. The element encloses a list of groups of terms (specified using the dt element) and descriptions (provided by dd elements)</p>
+    		</div>
+    		<div id="s3" class="bg-dark">
+    			<h1>Games</h1>
+    			<p>The  HTML element represents a description list. The element encloses a list of groups of terms (specified using the dt element) and descriptions (provided by dd elements)</p>
+    		</div>
+    		<div id="s4" class="bg-danger">
+    			<h1>Offline</h1>
+    			<p>The  HTML element represents a description list. The element encloses a list of groups of terms (specified using the dt element) and descriptions (provided by dd elements)</p>
+    		</div>
+
+    		<div id="s5" class="bg-warning">
+    			<h1>Online</h1>
+    			<p>The  HTML element represents a description list. The element encloses a list of groups of terms (specified using the dt element) and descriptions (provided by dd elements)</p>
+    		</div>
+
+
+    	</div>
+    	
+    </div>
+	</div>
+</body>
+</html>
